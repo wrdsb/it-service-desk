@@ -4,7 +4,7 @@ Support code for ITService Desk
 Windows Attributes Calculation
 --------------
 
-* written in Python
+* written in Boo, which is like Python, but not, and appears to not be in active development
 * Wiki started 2014-06-04
 * very long calculation
 
