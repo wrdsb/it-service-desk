@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-Equiv="Pragma" Content="no-cache">
+	<meta http-Equiv="Expires" Content="0">
+	<meta name="author" content="Dawn Marshall, WRDSB, dawn_marshall@wrdsb.on.ca">
+	<meta name="author" content="Suzanne Carter, WRDSB, suzanne_carter@wrdsb.on.ca">
+	
+<style>
+	body { /* set all the font options here, inherited by other elements */
+		font-family: Tahoma, Segoe UI, Corbel, Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10.5pt;
+		background-color: white;
+		color: black;
+	}
+	
+	li {
+		list-style-type: none; /* this removes the bullets */
+		color: black;
+	}
+	
+	a, a:visited {
+		text-decoration: none; /* this removes the underlines */
+		color: #31599c;
+	}
+	
+	p:hover, li:hover, h2:hover {
+		background-color:lightblue; /* this highlights the current item */
+	}
+	
+	h2 {
+		font-size: 20px;
+	}
+	
+	h2 span {
+		font-size: 13px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	
+	.icon {
+		width: 40px;
+		height: 40px;
+		vertical-align: middle;
+		float: left; 
+		padding-right: 10px;
+	}
+
+	hr {
+		border: 1px 0 0 0;
+		border-style: solid;
+		border-color: #eee;
+		height: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu {
+		cursor: help;
+	}
+</style>
+
+<script>
+function showOptions(ListToShow)
+{
+    if (document.getElementById(ListToShow).style.display=="none")
+        {document.getElementById(ListToShow).style.display="block";}
+    else
+        {document.getElementById(ListToShow).style.display="none"}
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>What do you need help with?</h1>
+
+<hr />
+
+<!-- Having a password, login, or access issue -->
+
+<h2 class="menu" title="Get assistance with a password, account, or access issue to files/network drive."  onclick="showOptions('PALoptions')"> <img src="../../itservicedesk.webaccess/content/images/custom/keys48.jpg" alt="Keys Image" class="icon" /> I can't access&#133;<br />
+	<span>Password | files | website</span></h2>
+
+<ul style="display:none;" id="PALoptions">
+	<li title="PAL, Application Server, Collection Plus, GAFE, Online Training, Telephone, etc" class="menu" onclick="showOptions('PasswordOptions')">Password [+]</li>
+		<ul "style="display: none;" id="PasswordOptions">
+			<li title="BAS, Collection Plus, Google Apps, Trillium, TWEA, WaterWorks, etc."><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate31" target="_blank">Personal Admin Login (PAL)</a></li>
+			<li title="Co Op Placement System, IPPS, Room Booking System, OPS$, etc."><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate34" target="_blank">Application Server (CPS,IPPS,Trillium Report)</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/open.rails?class_name=Knowledge.Article&key=62c1f8c7-c39a-49b6-bcd8-919a008a75a7" target="_blank">Collection Plus</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate31" target="_blank">Google Apps for Education (GAFE)</a></li>
+			<li title="CIR, Horizon, Learn 360, Web Reporter etc."><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate33" target="_blank">Library</a></li>
+			<li title="My Way"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate31" target="_blank">MyWay</a></li>
+			<li title="Online Training (Canvas)"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate83" target="_blank">Online Training</a></li>
+			<li title="PDPlace"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate85" target="_blank">PDPlace</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate53" target="_blank">Self Service Portal</a></li>
+			<li title="School Connect"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate32" target="_blank">Student Account</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate35" target="_blank">Telephone/Voicemail</a></li>
+			<li onmouseout="removeBackground(this)"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate31" target="_blank">WaterWorks</a></li>
+			<li title="Elementary and Secondary sites, Teacher sites, Corp sites, Staff tab etc."><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate36" target="_blank">Wordpress</a> (WRDSB websites)</li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate43" target="_blank">Other</a></li>
+		</ul>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate63" target="_blank">Block/Unblock Website</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate42"target="_blank">Can't access my files or network drives</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate55" target="_blank">File Restores/Increase Storage</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate43"target="_blank">Other</a></li>
+</ul>
+
+<!-- Something is not working correctly -->
+
+<h2 class="menu" title="Report a problem with a computer, mouse, etc."  onclick="showOptions('BrokenOptions')"> <img src="../../itservicedesk.webaccess/content/images/custom/computer48.jpg" alt="Broken Image" class="icon" />It doesn't work properly.<br />
+	<span>Application | Website | Hardware | Library | Network</span></h2>
+
+<ul style="display:none;" id="BrokenOptions">
+	<li class="menu" onclick="showOptions('BrokenHardwareOptions')">It's Hardware Related [+]</li>
+		<ul style="display:none;" id="BrokenHardwareOptions">
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate17" target="_blank">Attendance Scanners</a></li>
+            <li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate13" target="_blank">Desktop Computer/Laptop</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate15" target="_blank">Hearing Device</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate30" target="_blank">Network Drop/Wifi</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate16" target="_blank">Peripherals/Accessories</a></li>
+            <li><a href="../../ITServiceDesk.WebAccess/ss/object/open.rails?class_name=Knowledge.Article&key=ad521dc1-3066-4c32-8de9-6dc65ae0de92"  target="_blank">Photocopier</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate13" target="_blank">Portable Device (iPad, Chromebook, Tablet)</a></li>
+            <li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate14" target="_blank">Printer</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate19" target="_blank">Smartphone (cell)</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate18" target="_blank">Telephone (landline)/ PA System & Battery Backup / Headsets</a></li>
+         </ul>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate24" target="_blank">It's Library Related</a></li>
+	<li class="menu" onclick="showOptions('BrokenSoftwareOptions')">It's Software/Application/Website Related [+]</li>
+		<ul style="display:none;" id="BrokenSoftwareOptions">
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate20" target="_blank">Adobe Acrobat</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate23" target="_blank">BAS</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/open.rails?class_name=Knowledge.Article&key=62c1f8c7-c39a-49b6-bcd8-919a008a75a7" target="_blank">Collection Plus</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate24" target="_blank">eVideo/Library Databases/Insignia</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate21" target="_blank">ESL Tracker</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate20" target="_blank">Filemaker</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate80" target="_blank">Instructional Software</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate76" target="_blank">IEPWriter</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate78" target="_blank">Laserfiche</a></li>
+			<li><a title="Word, Excel, PowerPoint, Publisher" href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate20" target="_blank">Microsoft Office</a></li>
+			<li title="My Way"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate31" target="_blank">MyWay</a></li>
+			<li title="PDPlace"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate85" target="_blank">PDPlace</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate77" target="_blank">SAL</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate25" target="_blank">SERS</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate26" target="_blank">STSWR</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate21" target="_blank">Trillium</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/open.rails?class_name=Knowledge.Article&key=4ddd3cdd-1dec-41cc-ad60-8c51ead20226" target="_blank">TWEA</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate27" target="_blank">WaterWorks</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate28" target="_blank">WordPress</a> (WRDSB Websites)</li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate29" target="_blank">Other</a></li>
+		</ul>
+	</li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate56" target="_blank">Other </a></li>
+</ul>
+
+<!-- Can someone show me how/I have a question -->
+
+<h2 class="menu" title="Get instructions or help on using software or hardware."  onclick="showOptions('ShowHowOptions')"> <img src="../../itservicedesk.webaccess/content/images/custom/FAQ48.jpg" alt="Show Image" class="icon" /> I have a question?<br />
+	<span>Application | Website | Hardware | Library </span></h2>
+
+<ul style="display:none;" id="ShowHowOptions">
+	<li class="menu" onclick="showOptions('ShowHardOptions')">Hardware [+]</li>
+		<ul style="display: none;" id="ShowHardOptions">
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate75" target="_blank">Telephone</a></li>
+		</ul>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate48" target="_blank">Library System</a></li>
+	<li class="menu" onclick="showOptions('ShowSoftOptions')">Software/Application/Website [+]</li>
+		<ul style="display:none;" id="ShowSoftOptions">
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate44" target="_blank">Adobe Acrobat</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate47" target="_blank">BAS</a></li>
+			<li><a href=../../ITServiceDesk.WebAccess/ss/object/open.rails?class_name=Knowledge.Article&key=62c1f8c7-c39a-49b6-bcd8-919a008a75a7" target="_blank">Collection Plus</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate21" target="_blank">ESL Tracker</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate44" target="_blank">Filemaker</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate81" target="_blank">Instructional Software</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate78" target="_blank">Laserfiche</a></li>
+			<li><a title="Word, Excel, PowerPoint, Publisher" href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate44" target="_blank">Microsoft Office</a></li>
+			<li title="My Way"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate31" target="_blank">MyWay</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate57" target="_blank">ONSIS</a></li>
+			<li title="PDPlace"><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate85" target="_blank">PDPlace</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate77" target="_blank">SAL</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate25" target="_blank">SERS</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate49" target="_blank">STSWR</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=QuestionTrillium0" target="_blank">Trillium</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/open.rails?class_name=Knowledge.Article&key=4ddd3cdd-1dec-41cc-ad60-8c51ead20226 " target="_blank">TWEA</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate50" target="_blank">WaterWorks</a></li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate51" target="_blank">WordPress</a> (WRDSB Websites)</li>
+			<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate52" target="_blank">Other</a></li>
+		</ul>
+ </ul>
+
+<!-- I need to order or request something -->
+
+<h2 class="menu" title="Request IT Store items, Network drop, Library items, MISA report, Software Install, Software Purchase"  onclick="showOptions('RequestOptions')"> <img src="../../itservicedesk.webaccess/content/images/Custom/autoship48.jpg" alt="Request Image" class="icon" /> I need to order or request something.<br />
+	<span>New Account | Install Software | Library | Lynda Account | Hardware | Report | SEA Setup</span></h2>
+
+<ul style="display:none;" id="RequestOptions">
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate67" target="_blank">Hardware New Employee Request</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate68" target="_blank">Hardware Purchase</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate71" target="_blank">Library Request</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate84" target="_blank">Lynda Online Training Account</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate72" target="_blank">Network Request</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate37" target="_blank">New Account</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate73" target="_blank">MISA Report Request</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate82" target="_blank">SEA Setup</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate70" target="_blank">Software Install</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate69" target="_blank">Software Purchase</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/ss/object/create.rails?class_name=IncidentManagement.Incident&lifecycle_name=NewProcess21&object_template_name=NewTemplate38" target="_blank">THR Account</a></li>
+</ul>
+
+</body>
+</html>
