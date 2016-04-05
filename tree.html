@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-Equiv="Pragma" Content="no-cache">
+	<meta http-Equiv="Expires" Content="0">
+	<meta name="author" content="Dawn Marshall, WRDSB, dawn_marshall@wrdsb.on.ca">
+	<meta name="author" content="Suzanne Carter, WRDSB, suzanne_carter@wrdsb.on.ca">
+	
+<style>
+	body { /* set all the font options here, inherited by other elements */
+		font-family: Tahoma, Segoe UI, Corbel, Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10.5pt;
+		background-color: white;
+		color: black;
+	}
+	
+	li {
+		list-style-type: none; /* this removes the bullets */
+		color: black;
+	}
+	
+	a, a:visited {
+		text-decoration: none; /* this removes the underlines */
+		color: #31599c;
+	}
+	
+	p:hover, li:hover, h2:hover {
+		background-color:lightblue; /* this highlights the current item */
+	}
+	
+	h2 {
+		font-size: 20px;
+	}
+	
+	h2 span {
+		font-size: 13px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	
+	.icon {
+		width: 40px;
+		height: 40px;
+		vertical-align: middle;
+		float: left; 
+		padding-right: 10px;
+	}
+
+	hr {
+		border: 1px 0 0 0;
+		border-style: solid;
+		border-color: #eee;
+		height: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu {
+		cursor: help;
+	}
+</style>
+
+<script>
+function showOptions(ListToShow)
+{
+    if (document.getElementById(ListToShow).style.display=="none")
+        {document.getElementById(ListToShow).style.display="block";}
+    else
+        {document.getElementById(ListToShow).style.display="none"}
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>How can we help you?</h1>
+
+<hr />
+
+<!-- password isn't working -->
+
+<h2><a href="" target="_blank">Someone else's password isn't working</a></h2>
+
+<!-- access problems -->
+
+<h2 class="menu" title="Get assistance with an account or access issue."  onclick="showOptions('access')">Access to Files/Information<br />
+	<span>file restore | request a report</span></h2>
+
+<ul style="display:none;" id="access">
+	<li><a href="" target="_blank">File Restore</a></li>
+	<li><a href="" target="_blank" title="Inventory, MISA, Trillium Report, Collection Plus">Request a Report</a></li>
+	<li><a href="" target="_blank">Report an issue with your files</a></li>
+</ul>
+
+<!-- application/website requests -->
+
+<h2 class="menu" title="Request applications or websites be installed or developed. Request websites be (un)blocked."  onclick="showOptions('appwebrequest')">Application or Website Requests<br />
+	<span>install, purchase or develop | request access or account | (un)block</span></h2>
+
+<ul style="display:none;" id="appwebrequest">
+	<li><a href="" target="_blank">Application install or purchase</a></li>
+	<li><a href="" target="_blank">Account access</a></li>
+	<li><a href="" target="_blank">WaterWorks Conference created</a></li>
+	<li><a href="" target="_blank">Feature request for an existing application or website</a></li>
+	<li><a href="" target="_blank">Create a new application or website</a></li>
+	<li><a href="" target="_blank">(Un)block an external website</a></li>
+	<li><a href="" target="_blank">Report an issue with an application or website</a></li>
+</ul>
+
+<!-- telephone, smartphone, network -->
+
+<h2 class="menu" title="Laptop, desktop, printer, chromebook, iPad, Xerox, etc."  onclick="showOptions('telephonyrequest')">Telephone, Smartphone or Network Requests<br />
+	<span>place an order | voicemail | syncing | pa speakers | teleconference</span></h2>
+
+<ul style="display:none;" id="telephonyrequest">
+	<li><a href="" target="_blank">Order telephone supplies</a></li>
+	<li><a href="" target="_blank">Voicemail reset</a></li>
+	<li><a href="" target="_blank">Order network supplies</a></li>
+	<li><a href="" target="_blank">Report a smartphone syncing issue</a></li>
+	<li><a href="" target="_blank">Report a telephone or PA system issue</a></li>
+	<li><a href="" target="_blank">Report a network connectivity issue</a></li>
+</ul>
+
+<!-- equipment requests -->
+
+<h2 class="menu" title="Laptop, desktop, printer, chromebook, iPad, Xerox, etc."  onclick="showOptions('equipmentrequest')">Equipment Requests<br />
+	<span>place an order | request a move, change or setup</span></h2>
+
+<ul style="display:none;" id="equipmentrequest">
+	<li><a href="" target="_blank">Request equipment</a></li>
+	<li><a href="" target="_blank">Request a move, change or setup of equipment</a></li>
+	<li><a href="" target="_blank">Report a problem with equipment</a></li>
+</ul>
+
+<!-- library -->
+
+<h2 class="menu" title=""  onclick="showOptions('library')">Library<br />
+	<span>report an issue | request supplies | training requests</span></h2>
+
+<ul style="display:none;" id="library">
+	<li><a href="" target="_blank">Request library supplies</a></li>
+	<li><a href="" target="_blank">Feature request for library systems</a></li>
+	<li><a href="" target="_blank">Other library requests</a></li>
+	<li><a href="" target="_blank">Report a library-related issue</a></li>
+</ul>
+
+<!-- new employee in role -->
+
+<h2 class="menu" title=""  onclick="showOptions('employee')">Employee new to a Role<br />
+	<span>request equipment | request accounts | request information</span></h2>
+
+<ul style="display:none;" id="employee">
+	<li><a href="" target="_blank">Request items for your new role</a></li>
+	<li><a href="" target="_blank">New Employee Information Guide</a></li>
+</ul>
+
+<!-- other -->
+
+<h2 title="Couldn't find your problem? Log a general ticket and we'll get it to the right location!"><a href="" target="_blank">Report a problem not listed above</a></h2>
+
+
+<!--
+	Blank links
+
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+	<li><a href="" target="_blank"></a></li>
+-->
+
+</body>
+</html>
