@@ -7,6 +7,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-Equiv="Pragma" Content="no-cache">
 	<meta http-Equiv="Expires" Content="0">
+	<meta name="version" CONTENT="1.0.0">
 	<meta name="author" content="Dawn Marshall, WRDSB, dawn_marshall@wrdsb.on.ca">
 	<meta name="author" content="Suzanne Carter, WRDSB, suzanne_carter@wrdsb.on.ca">
 	
@@ -60,6 +61,9 @@
 	.menu {
 		cursor: help;
 	}
+	.buttons img {
+		diplay: inline;
+	}
 </style>
 
 <script>
@@ -70,6 +74,12 @@ function showOptions(ListToShow)
     else
         {document.getElementById(ListToShow).style.display="none"}
 }
+
+function hideOptions(ListToHide)
+{
+	document.getElementById(ListToHide).style.display="none";
+}
+
 </script>
 
 </head>
@@ -78,15 +88,51 @@ function showOptions(ListToShow)
 
 <h1>How can we help you?</h1>
 
-<!-- buttons go here 
+<div class="hotbuttons">
+	<img src="images/itsd_ww_icon.png" height="50" width="50" alt="WaterWorks" onclick="showOptions('ww'); hideOptions('tel');hideOptions('pal');hideOptions('equip');hideOptions('trillium');hideOptions('unknown')" />
+	<img src="images/itsd_telephony_icon.png" height="50" width="50" alt="Telephony" onclick="showOptions('tel'); hideOptions('ww');hideOptions('pal');hideOptions('equip');hideOptions('trillium');hideOptions('unknown')" />
+	<img src="images/itsd_equipment_icon.png" height="50" width="50" alt="Equipment" onclick="showOptions('equip'); hideOptions('tel');hideOptions('pal');hideOptions('ww');hideOptions('trillium');hideOptions('unknown')" />
+	<img src="images/itsd_pal_icon.png" height="50" width="50" alt="PAL" onclick="showOptions('pal'); hideOptions('tel');hideOptions('ww');hideOptions('equip');hideOptions('trillium');hideOptions('unknown')" />
+	<img src="images/itsd_trillium_icon.png" height="50" width="50" alt="Trillium" onclick="showOptions('trillium'); hideOptions('tel');hideOptions('pal');hideOptions('equip');hideOptions('ww');hideOptions('unknown')" />
+	<img src="images/itsd_donotknow_icon.png" height="50" width="50" alt="I don't know!" onclick="showOptions('unknown'); hideOptions('tel');hideOptions('pal');hideOptions('equip');hideOptions('trillium');hideOptions('ww')" />
+</div>
 
-WaterWorks
-Telephony
-Equipment
-PAL
-Trillium
+<ul style="display:none;" id="ww">
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate101" target="_blank">Request WaterWorks Access</a> (conference, email)</li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate94" target="_blank">Report an issue with WaterWorks</a></li>
+</ul>
+
+<ul style="display:none;" id="tel">
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate108" target="_blank">Order telephone supplies</a></li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate98" target="_blank">Report a telephone or PA system issue</a></li>
+</ul>
+
+<ul style="display:none;" id="equip">
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate103" target="_blank">Request equipment</a></li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate103" target="_blank">Request a move, change or setup of equipment</a></li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate92" target="_blank">Report a problem with equipment</a></li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate105" target="_blank">Order network supplies</a></li>
+</ul>
+
+<ul style="display:none;" id="pal">
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate93" target="_blank">Someone else's password isn't working</a></li>
+</ul>
+
+<ul style="display:none;" id="trillium">
+
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate101" target="_blank">Request Trillium Account access</a></li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate94" target="_blank">Report an issue with Trillium</a></li>
+</ul>
+
+<ul style="display:none;" id="unknown">
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate100" target="_blank">Report a problem not listed above</a></li>
+</ul>
+<!--
+
 Maybe Library
-? Don't Know!
+
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate110" target="_blank">Other library requests</a></li>
+	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate96" target="_blank">Report a library-related issue</a></li>
 
 -->
 
