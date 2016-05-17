@@ -143,43 +143,47 @@ function hideOptions(ListToHide)
 
 <!-- access problems -->
 
-<h2 class="menu" title="Get assistance with an account or access issue."  onclick="showOptions('access')">Access to Files/Information<br />
-	<span>file restore | request a report | Report a Problem </span></h2>
+<h2 class="menu" title="Get assistance with an account or access issue."  onclick="showOptions('access')">Access<br />
+	<span>File restore | Request a report | Access to Files/Internet | Report a Problem </span></h2>
 
 <ul style="display:none;" id="access">
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate93" target="_blank">Someone else's password isn't working</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate106" target="_blank">File Restore</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate107" target="_blank" title="Inventory, MISA, Trillium Report, Collection Plus">Request a Report</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate111" target="_blank">Report an issue with your files</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate97" target="_blank">Report a network connectivity issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate119" target="_blank">PAL</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate101" target="_blank">Application or website</a></li>
+		<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate115" target="_blank">External website block or unblock</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate111" target="_blank">File or network drive </a></li>	
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate106" target="_blank">File restore</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate97" target="_blank">Internet or network connectivity issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate107" target="_blank" title="Inventory, MISA, Trillium Report, Collection Plus">Request a Report</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate118" target="_blank">THR</a></li>
+
 </ul>
 
 <!-- application/website requests -->
 
 <h2 class="menu" title="Request applications or websites be installed or developed. Request websites be (un)blocked."  onclick="showOptions('appwebrequest')">Application or Website<br />
-	<span>install, purchase or develop | request access or account | (un)block | Report a Problem </span></h2>
+	<span>Install, Purchase, Enhancement or Develop | Request access or account | Block or Unblock| Report a Problem </span></h2>
 
 <ul style="display:none;" id="appwebrequest">
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate102" target="_blank">Application install or purchase</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate101" target="_blank">Account access</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate101" target="_blank">WaterWorks Conference created</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate90" target="_blank">Feature request for an existing application or website</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate90" target="_blank">Create a new application or website</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate90" target="_blank">(Un)block an external website</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate94" target="_blank">Report an issue with an application or website</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate102" target="_blank">Installation or purchase </a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate101" target="_blank">Application or website access</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate94" target="_blank">Application or website issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate115" target="_blank">External website access block or unblock</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate116" target="_blank">New application development request</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate112" target="_blank">WaterWorks Requests(calendar, conference)</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate90" target="_blank">Other Application/website requests</a></li>
 </ul>
 
 
 <!-- equipment requests -->
 
 <h2 class="menu" title="Laptop, desktop, printer, chromebook, iPad, Xerox, etc."  onclick="showOptions('equipmentrequest')">Equipment<br />
-	<span>place an order | request a move, change or setup | Report a Problem</span></h2>
+	<span>Place an order | Request a move, change or setup | Report a Problem</span></h2>
 
 <ul style="display:none;" id="equipmentrequest">
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate103" target="_blank">Request equipment</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate103" target="_blank">Request a move, change or setup of equipment</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate92" target="_blank">Report a problem with equipment</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate105" target="_blank">Order network supplies</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate103" target="_blank">Equipment and supplies request</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate117" target="_blank">Move, change or setup</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate92" target="_blank">Problem with equipment</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate105" target="_blank">Network drop request</a></li>
 </ul>
 
 <!-- library -->
@@ -188,28 +192,29 @@ function hideOptions(ListToHide)
 	<span>report an issue | request supplies | training requests | Report a Problem</span></h2>
 
 <ul style="display:none;" id="library">
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate104" target="_blank">Request library supplies</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate109" target="_blank">Feature request for library systems</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate110" target="_blank">Other library requests</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate96" target="_blank">Report a library-related issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate104" target="_blank">Library supplies request</a></li>
+<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate96" target="_blank">Library system issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate120" target="_blank">Other library questions</a></li>
+	
 </ul>
 
 
 <!-- telephone, smartphone, network -->
 
-<h2 class="menu" title="Laptop, desktop, printer, chromebook, iPad, Xerox, etc."  onclick="showOptions('telephonyrequest')">Telephone / Smartphone<br />
-	<span>place an order | voicemail | syncing | pa speakers | teleconference | Report a Problem</span></h2>
+<h2 class="menu" title="Headsets, Cords, Telephone lines, Smartphone syncing etc. "  onclick="showOptions('telephonyrequest')">Telephone / Smartphone<br />
+	<span>Place an order | Voicemail | Syncing | PA speakers | Teleconference | Report a Problem</span></h2>
 
 <ul style="display:none;" id="telephonyrequest">
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate108" target="_blank">Order telephone supplies</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate108" target="_blank">Voicemail reset</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate99" target="_blank">Report a smartphone syncing issue</a></li>
-	<li><a href="../../ITServiceDeskSAND.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate98" target="_blank">Report a telephone or PA system issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate99" target="_blank">Smartphone syncing issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate108" target="_blank">Telephone equipment and supplies</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate98" target="_blank">Telephone or PA system issue</a></li>
+	<li><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=RequestManagement.Request&amp;lifecycle_name=NewProcess33&amp;object_template_name=NewTemplate113" target="_blank">Voicemail reset</a></li>
+	
 </ul>
 
 <!-- other -->
 
-<h2 title="Couldn't find your problem? Log a general ticket and we'll get it to the right location!"><a href="" target="_blank">Report a problem not listed above</a></h2>
+<h2 title="Couldn't find your problem? Log a general ticket and we'll get it to the right location!"><a href="../../ITServiceDesk.WebAccess/wd/object/create.rails?class_name=IncidentManagement.Incident&amp;lifecycle_name=NewProcess21&amp;object_template_name=NewTemplate100" target="_blank">Report a problem not listed above</a></h2>
 
 
 <!--
