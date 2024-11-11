@@ -1,3 +1,5 @@
+This repository was archived 2024-11-11.
+
 Support code for ITService Desk
 ==============
 
